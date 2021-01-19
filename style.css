@@ -1,0 +1,149 @@
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+header {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto 50px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.header1, .header2 {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.portrait {
+  height: 200px;
+  width: 200px;
+  border: 0px solid white;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+main {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  left: 7%;
+  right: 93%;
+  top: 1%;
+  width: 150px;
+  font-size: large;
+}
+
+nav > a {
+  text-decoration: none;
+  color: rgb(116, 112, 112);
+  display: block;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+div[class='contents'] {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div[class='contents'] > div {
+  max-width:740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16%;
+}
+
+div > img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+  border: 0px solid white;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+
+footer {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div {
+  width: 50%;
+}
+
+@media (max-width: 1250px) {
+
+nav {
+ visibility: hidden;
+}
+
+footer {
+  flex-direction: column;
+
+}
+
+footer > div {
+  width: 100%;
+}
+
+}
+
+@media (max-width: 390px) {
+
+  * {
+    font-size: 12px;
+  }
+
+    .portrait {
+  height: 120px;
+  width: 120px;
+}
+
+  div > img {
+  height: 200px;
+  width: 200px;
+}
+
+}
+
+@media (min-width: 1600px) {
+
+  * {
+    font-size: 18px;
+  }
+
+  .portrait {
+  height: 200px;
+  width: 200px;
+}
+
+
+  div > img {
+  height: 450px;
+  width: 450px;
+}
+
+}
